@@ -10,7 +10,7 @@ on:
     branches: [ master ]
 
 jobs:
-  build:
+  Vulnerability-Scanner:
 
     runs-on: ubuntu-latest
 
