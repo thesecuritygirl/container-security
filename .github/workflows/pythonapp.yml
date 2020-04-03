@@ -28,5 +28,5 @@ jobs:
       run: |
         wget https://downloads.cisofy.com/lynis/lynis-2.7.5.tar.gz && ls -lrt
         tar -zxvf lynis-2.7.5.tar.gz
-        ./lynis audit dockerfile ./Dockerfile
+        ./lynis/lynis audit dockerfile ./Dockerfile
    
