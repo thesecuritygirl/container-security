@@ -26,6 +26,7 @@ jobs:
         pip install flask pyyaml safety liccheck bandit
     - name: Container Security
       run: |
-        wget https://downloads.cisofy.com/lynis/lynis-2.7.5.tar.gz && ls -lrt && tar -xfvz lynis-2.7.5.tar.gz
+        wget https://downloads.cisofy.com/lynis/lynis-2.7.5.tar.gz && ls -lrt
+        tar -zxvf lynis-2.7.5.tar.gz
         ./lynis audit dockerfile ./Dockerfile
    
